@@ -1,12 +1,12 @@
-# Импорт библиотек
+# библиотеки
 import pygame, sys
 from pygame.locals import *
 import random, time
 
-# Инициализация pygame
+# pygame
 pygame.init()
 
-# FPS (кадры в секунду)
+# FPS
 FPS = 60
 FramePerSec = pygame.time.Clock()
 
@@ -37,7 +37,7 @@ background = pygame.image.load("AnimatedStreet.png")
 DISPLAYSURF = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Racer Game")
 
-# Класс врага (машины)
+# Класс врага 
 class Enemy(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
@@ -54,7 +54,7 @@ class Enemy(pygame.sprite.Sprite):
             self.rect.top = 0
             self.rect.center = (random.randint(40, SCREEN_WIDTH - 40), 0)
 
-# Класс игрока (машины)
+# Класс игрока
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
@@ -92,7 +92,7 @@ class Coin(pygame.sprite.Sprite):
         self.rect.center = (random.randint(40, SCREEN_WIDTH - 40), random.randint(40, SCREEN_HEIGHT - 200))
         self.value = random.choice([1, 2, 5])
 
-# Создание спрайтов
+# спрайты
 P1 = Player()
 E1 = Enemy()
 C1 = Coin()

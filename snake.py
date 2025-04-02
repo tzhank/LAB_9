@@ -1,10 +1,10 @@
 import pygame
 import random
 
-# Инициализация Pygame
+# Pygame
 pygame.init()
 
-# Константы экрана
+# экран
 WIDTH, HEIGHT = 600, 400
 CELL_SIZE = 20
 GRID_WIDTH = WIDTH // CELL_SIZE

@@ -1,14 +1,14 @@
 import pygame
 
-# Инициализация pygame
+# pygame
 pygame.init()
 
-# Константы экрана
+# экран
 WIDTH, HEIGHT = 800, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Paint Program")
 
-# Цвета
+# цвета
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
